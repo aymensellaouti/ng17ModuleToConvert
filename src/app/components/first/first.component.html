@@ -1,0 +1,10 @@
+<p [hidden]="isHidden">first {{ message }}</p>
+
+<!-- Appelle showhide à chaque click sur le boutton -->
+<button (click)="showhide()" class="btn btn-danger">toggle</button>
+<input
+  (change)="changeContenuDeLInput(monInput.value)"
+  type="text"
+  class="form-control"
+  #monInput
+/>

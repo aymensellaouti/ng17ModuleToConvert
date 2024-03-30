@@ -1,0 +1,10 @@
+input.ng-invalid.ng-dirty {
+  border: red solid 2px;
+}
+button[disabled] {
+  background-color: lightcoral;
+  opacity: 20%;
+}
+/* pristine # dirty */
+/* touched # untouched */
+/* valid # invalid */

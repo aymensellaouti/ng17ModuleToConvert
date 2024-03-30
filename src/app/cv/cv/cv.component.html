@@ -1,0 +1,10 @@
+<div *ngIf="cvs$ | async as cvs" class="row">
+  <div class="col">
+    <div class="alert alert-warning">
+      {{today | date:'fullDate':'GMT':'fr' | titlecase}}
+      Les cvs ont élé sélctionné {{nbre}} fois;
+    </div>
+    <app-list [cvs]="cvs"/></div>
+  <div class="col"><app-detail-card [cv]="selectedCv"/></div>
+</div>
+<app-embauche/>

@@ -1,0 +1,13 @@
+<ol
+  data-cy="listCvs"
+  class="list-group">
+  <li
+    [ngClass]="{
+      'list-group-item-primary': isOdd,
+      'list-group-item-secondary': !isOdd
+    }"
+    *ngFor="let cv of cvs; let isOdd = odd"
+    class="list-group-item">
+    <app-item [cv]="cv"/>
+  </li>
+</ol>

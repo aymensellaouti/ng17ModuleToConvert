@@ -1,0 +1,10 @@
+<div data-cy="item" (click)="onSelectCv()">
+  <img
+    class="rounded-circle"
+    [ngStyle]="{
+      width: size + 'px',
+      heigth: size + 'px'
+    }"
+    src="assets/images/{{cv.path | defaultImage}}" alt="{{cv.name}}">
+  {{cv.firstname}} {{cv.name}}
+</div>
