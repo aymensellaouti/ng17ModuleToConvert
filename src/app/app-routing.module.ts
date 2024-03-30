@@ -3,9 +3,11 @@ import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 import { FirstComponent } from "./components/first/first.component";
 import { APP_ROUTES } from "./config/routes.config";
 import { NF404Component } from "./components/nf404/nf404.component";
+import { LoginComponent } from "./auth/login/login.component";
 
 const routes: Routes = [
   { path: "", component: FirstComponent },
+  { path: "login", component: LoginComponent },
   {
     path: APP_ROUTES.cv,
     loadChildren: () => import("./cv/cv.module").then((m) => m.CvModule),
