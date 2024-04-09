@@ -27,8 +27,8 @@ import { NF404Component } from "./components/nf404/nf404.component";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(), // ToastrModule added
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     HttpClientModule,
   ],
   exports: [],

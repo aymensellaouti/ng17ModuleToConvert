@@ -1,0 +1,25 @@
+<div class="row alert aelrt-info">
+  <div class="row">
+    <div class="col-5">
+      <input [(ngModel)]="todo().name" type="text" class="form-control" />
+    </div>
+    <div class="col-5">
+      <input [(ngModel)]="todo().content" type="text" class="form-control" />
+    </div>
+    <div class="col"><button class="btn btn-danger">add todo</button></div>
+  </div>
+  <div class="row">
+    <div class="col alert alert-secondary">
+      <h2>WAITING</h2>
+      <app-list-todos />
+    </div>
+    <div class="col alert alert-warning">
+      <h2>IN PROGRESS</h2>
+      <app-list-todos />
+    </div>
+    <div class="col alert alert-success">
+      <h2>DONE</h2>
+      <app-list-todos />
+    </div>
+  </div>
+</div>
